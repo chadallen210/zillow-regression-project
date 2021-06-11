@@ -148,3 +148,4 @@ def Min_Max_Scaler(X_train, X_validate, X_test):
     X_test_scaled = pd.DataFrame(scaler.transform(X_test), index = X_test.index, columns = X_test.columns)
     
     return scaler, X_train_scaled, X_validate_scaled, X_test_scaled
+

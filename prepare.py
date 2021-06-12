@@ -36,23 +36,23 @@ def miss_dup_values(df):
         # Return the dataframe with missing information
     return mis_val_table_ren_columns
 
-def wrangle_zillow():
+def wrangle_zillow(df):
     '''
     checks for existing zillow csv file and loads if present,
     otherwise runs new_zillow_data function to acquire data
     '''
     
-    # drop any duplicates (removed 25 records)
-    df.drop_duplicates(inplace=True)
+    # set index to parcelid (no statistical value)
+    df.set_index('parcelid', drop=True, inplace=True)
+    
+    # drop any duplicates (removed 58 records)
+    df.drop_duplicates(keep=False, inplace=True)
 
     # replace symbols, etc with NaN's
     df = df.replace(r'^\s*$', np.nan, regex=True)
     
-    # drop nulls (removed 95 records)
-    df = df.dropna()
-    
-    # set index to parcelid (no statistical value)
-    df.set_index('parcelid', drop=True, inplace=True)
+    # drop nulls (removed 94 records)
+    df = df.dropna(axis=0)
     
     # rename columns for easier identification
     df = df.rename(columns={'parcelid': 'parcel_id', 'bathroomcnt': 'bathrooms', 'bedroomcnt': 'bedrooms',
@@ -76,7 +76,7 @@ def wrangle_zillow():
     uppersf = q3sf + (1.5 * iqrsf)
     lowersf = q1sf - (1.5 * iqrsf)
     
-    # remove outliers if below or above the bounds (removed 1194 records)
+    # remove outliers if below or above the bounds (removed 1191 records)
     df = df[df.square_feet > lowersf]
     df = df[df.square_feet < uppersf]
     
@@ -86,7 +86,7 @@ def wrangle_zillow():
     upperav = q3av + (1.5 * iqrav)
     lowerav = q1av - (1.5 * iqrav)
     
-    # remove outliers if below or above the bounds (removed 1226 records)
+    # remove outliers if below or above the bounds (removed 1326 records)
     df = df[df.appraised_value > lowerav]
     df = df[df.appraised_value < upperav]
     
@@ -106,7 +106,7 @@ def wrangle_zillow():
     upperbd = q3bd + (1.5 * iqrbd)
     lowerbd = q1bd - (1.5 * iqrbd)
     
-    # remove outliers if below or above the bounds (removed 487 records)
+    # remove outliers if below or above the bounds (removed 485 records)
     df = df[df.bedrooms > lowerbd]
     df = df[df.bedrooms < upperbd]
         

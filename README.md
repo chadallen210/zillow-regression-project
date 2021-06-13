@@ -54,3 +54,16 @@ What are the counties and tax rates for the transactions in the project?
 The Zillow database contains many tables. The properties_2017 and predictions_2017 tables were joined together to pull the data into a single pandas DataFrame for this project.
 
 After preparing the data, the remaining features and values are listed below:
+
+| Feature         | Description                                               | Data Type |
+|-----------------|-----------------------------------------------------------|-----------|
+| parcelid        | Unique identifier assigned to each property, set as index | int64     |
+| bathrooms       | Number of bathrooms                                       | int64     |
+| bedrooms        | Number of bedrooms                                        | int64     |
+| square_feet     | Square feet of the property                               | int64     |
+| county_code     | FIPS county code for location of property                 | int64     |
+| age             | Age of the property                                       | int64     |
+| appraised_value | Appraised value of the property                           | int64     |
+| taxes           | Tax amount                                                | float64   |
+
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>

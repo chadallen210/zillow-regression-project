@@ -93,8 +93,8 @@ After preparing the data, the remaining features and values are listed below:
 
 > - Properties in the project were located in 3 counties in California and were distrubited as follows:
 > - - Los Angeles:    15842 (mean tax rate: 1.43%)
-> - - Orange:          6807 (OC mean tax rate: 1.21%)
-> - - Ventura:         2239 (VC mean tax rate: 1.19%)
+> - - Orange:          6807 (mean tax rate: 1.21%)
+> - - Ventura:         2239 (mean tax rate: 1.19%)
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 

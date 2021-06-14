@@ -67,3 +67,25 @@ After preparing the data, the remaining features and values are listed below:
 | taxes           | Tax amount                                                | float64   |
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+
+#### Initial Hypotheses
+
+> - **Hypothesis 1 -** Rejected the Null Hypothesis; the type of internet service appears to affect churn.
+> - alpha = .05
+> - $H_0$: The average appraised value of properties with 1600 sq.ft. or more is equal to the average appraised value of properties with 1600 sq.ft or less. 
+> - $H_a$: The average appraised value of properties with 1600 sq.ft. or more is higher than the average appraised value of properties with 1600 sq.ft or less.
+
+> - **Hypothesis 2 -** Rejected the Null Hypothesis; having auto-pay appears to have an affect on churn.
+> - alpha = .05
+> - $H_0$: The number of bathrooms has no affect on the appraised value (independent) 
+> - $H_a$: The number of bathrooms does have an affect on appraised value (dependent)
+
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+
+#### Reproduce My Project
+
+You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook. 
+- [x] Read this README.md
+- [ ] Download the aquire.py, prepare.py and zillow_regression_final_notebook.ipynb files into your working directory
+- [ ] Add your own env file to your directory. (username, password, host)
+- [ ] Run the zillow_regression_final_notebook.ipynb notebook

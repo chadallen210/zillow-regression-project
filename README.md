@@ -70,12 +70,12 @@ After preparing the data, the remaining features and values are listed below:
 
 #### Initial Hypotheses
 
-> - **Hypothesis 1 -** Rejected the Null Hypothesis; the type of internet service appears to affect churn.
+> - **Hypothesis 1 -** Rejected the Null Hypothesis; the average appraised value of properties with 1600 sq.ft or more appears to be higher than the average appraised value of properties with 1600 sq.ft. or less.
 > - alpha = .05
 > - $H_0$: The average appraised value of properties with 1600 sq.ft. or more is equal to the average appraised value of properties with 1600 sq.ft or less. 
 > - $H_a$: The average appraised value of properties with 1600 sq.ft. or more is higher than the average appraised value of properties with 1600 sq.ft or less.
 
-> - **Hypothesis 2 -** Rejected the Null Hypothesis; having auto-pay appears to have an affect on churn.
+> - **Hypothesis 2 -** Rejected the Null Hypothesis; the number of bathrooms appears to have an affect on the appraised value.
 > - alpha = .05
 > - $H_0$: The number of bathrooms has no affect on the appraised value (independent) 
 > - $H_a$: The number of bathrooms does have an affect on appraised value (dependent)

@@ -82,6 +82,22 @@ After preparing the data, the remaining features and values are listed below:
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
+#### Key Findings and Takeaways
+
+> - Created 3 regression models - OLS (LinearRegression), LassoLars, and TweedieRegressor (GLM) - and tested them with a list of 4 features - 'bathrooms', 'bedrooms', 'square_feet', and 'age' to predict the target value of 'appraised_value'.
+> - Each model was better at predicting the 'appraised_value' than the baseline.
+> - Chose the LassoLars model as the best model with lowest R^2 value. This model outperformed the baseline, so it has value.
+> - Initial exploration and statistical testing revealed that the selected features produced well-fit models, and with more time exploring additional features and/or adjusting hyperparameters could improve the results.
+
+#### Additional Deliverables
+
+> - Properties in the project were located in 3 counties in California and were distrubited as follows:
+> - - Los Angeles:    15842 (mean tax rate: 1.43%)
+> - - Orange:          6807 (OC mean tax rate: 1.21%)
+> - - Ventura:         2239 (VC mean tax rate: 1.19%)
+
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+
 #### Reproduce My Project
 
 You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook. 

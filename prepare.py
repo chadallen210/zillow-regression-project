@@ -38,8 +38,16 @@ def miss_dup_values(df):
 
 def wrangle_zillow(df):
     '''
-    checks for existing zillow csv file and loads if present,
-    otherwise runs new_zillow_data function to acquire data
+    takes in the df and performs data cleaning
+    operations include:
+    setting the index to parcelid
+    dropping duplicate records
+    replacing symbols and spaces and removing nulls
+    renaming columns for readability
+    creating 'age' column (2017 - yearbuilt)
+    setting data types to 'int'
+    removing outliers based on IQR
+    returns the df
     '''
     
     # set index to parcelid (no statistical value)

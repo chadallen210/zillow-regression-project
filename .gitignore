@@ -3,7 +3,7 @@ env.py
 .ipynb_checkpoints/
 __pycache__
 .vscode/
-Untitled*.ipynb
+Untitled*.*
 *.csv
 *.xlsx
 Thumbs.db
